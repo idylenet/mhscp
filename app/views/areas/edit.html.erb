@@ -1,0 +1,20 @@
+<h2>Editing area</h2>
+
+<% form_for(@area) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :desc %>
+    <%= f.text_area :desc %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @area %> |
+<%= link_to 'Back', areas_path %>

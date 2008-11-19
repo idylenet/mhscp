@@ -1,0 +1,21 @@
+<%= error_messages_for :device_type %>
+
+<%= render :partial => 'device_type_fields', :locals => {:f => f} %>
+
+<h3>Data Registers (<%= f.add_associated_link "Add New", @device_type.data_registers.build %>)</h3>
+
+<table class="data">
+	<thead>
+		<tr>
+			<td>Name</td>
+			<td>Register</td>
+			<td>Unit</td>
+			<td>Writable</td>
+			<td>Description</td>
+			<td>Remove</td>
+		</tr>
+	</thead>
+	<tbody id="data_registers">
+		<%= f.render_associated_form(@device_type.data_registers) %>
+	</tbody>
+</table>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>MHSCP: <% unless @title.nil? %> <%= @title %> <% else %> <%= controller.controller_name %>/<%= controller.action_name %> <% end %></title>
+
+	<% # bundle do %>
+
+	<%= stylesheet_link_tag 'scaffold' %>
+	<%= stylesheet_link_tag 'meters' %>
+	<%= stylesheet_link_tag 'superfish' %>
+	<!-- <%= stylesheet_link_tag 'superfish-navbar' %> -->
+	<!-- LOAD MERCEY STYLESHEET LAST TO ENSURE OVERRIDES -->
+	<%= stylesheet_link_tag 'mercey' %>
+
+	<%= javascript_include_tag 'jquery-1.2.6.js' %>
+	<%= javascript_include_tag 'jrails' %>
+	<%= javascript_include_tag 'jquery.dimensions.js' %>
+	<%= javascript_include_tag 'jquery.color.js' %>
+	<%= javascript_include_tag 'jquery.ahover.js' %>
+	<%= javascript_include_tag 'jquery.tablesorter.js' %>
+	<%= javascript_include_tag 'jquery.blockUI.js' %>
+	<%= javascript_include_tag 'jquery.ajaxmanager.js' %>
+	<%= javascript_include_tag 'jquery.flydom.js' %>
+	<%= javascript_include_tag 'jquery.template.js' %>
+	<%= javascript_include_tag 'jquery.form.js' %>
+	<%= javascript_include_tag 'superfish.js' %>
+	
+	<%= javascript_include_tag 'application' %>
+	<%= javascript_include_tag 'meters' %>
+	<%= javascript_include_tag 'device' %>
+	<%= javascript_include_tag 'data_register' %>
+	
+	<% # end %>
+	
+</head>
+<body>
+
+<div id="header">
+	
+	<h1>MERCEY HOT SPRINGS CONTROL PANEL</h1>
+
+</div>
+
+<%= semantic_menu :class => 'sf-menu' do |root|
+
+	root.add "Home", root_path
+
+	root.add "Areas", areas_path do |areas|
+		areas.add "New", new_area_path
+		areas.add "Listing", areas_path
+	end
+
+	root.add "Devices", devices_path do |devices|
+		devices.add "New", new_device_path
+		devices.add "Listing", devices_path
+		devices.add "Types", device_types_path do |device_type|
+			device_type.add "New", new_device_type_path
+			device_type.add "Listing", device_types_path
+		end
+	end
+
+	root.add "Data Registers", data_registers_path do |data_register|
+		data_register.add "New", new_data_register_path		
+		data_register.add "Listing", data_registers_path
+		data_register.add "Logs", data_register_logs_path do |data_register_log|
+			data_register_log.add "New", new_data_register_log_path
+			data_register_log.add "Listing", data_register_logs_path
+		end
+	end
+
+	root.add "Tests", '#' do |tests|
+		tests.add "Meters", meter_test_path
+	end
+	
+	root.add "Help", help_path
+
+end %>
+
+<div id="content">
+	
+	<% unless flash.empty? %>
+	<div id="messages">
+		<% unless flash[:notice].nil? %><p class="notice"><%= flash[:notice] %> <a href="#" class="close">Close</a></p><% end %>
+		<!-- <% unless flash[:error].nil? %><p class="error"><%= flash[:error] %> <a href="#" class="close">Close</a></p><% end %> -->
+	</div>
+	<% end %>
+	
+	<%= yield  %>
+	<br clear="both">
+</div>
+
+</body>
+</html>

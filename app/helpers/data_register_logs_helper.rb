@@ -1,0 +1,2 @@
+module DataRegisterLogsHelper
+end

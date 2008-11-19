@@ -1,0 +1,10 @@
+
+default:
+  start: -10
+  end: 100
+  unit: 'AMPS'
+  - layers
+    red: 0.3
+    orange: 0.2
+    green: 0.3
+    red: 0.1

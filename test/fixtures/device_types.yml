@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+vfd:
+  name: L200 VFD Controller
+  desc: Hitachi VFD
+
+adc:
+  name: Analog to Digital Converter
+  desc: Signal inverter

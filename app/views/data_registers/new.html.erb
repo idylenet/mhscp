@@ -1,0 +1,14 @@
+<h2>New Data Register</h2>
+
+<% form_for(@data_register) do |f| %>
+
+	<%= f.error_messages %>
+
+  <%= render :partial => 'fields', :locals => {:f => f} %>
+
+  <p>
+    <%= f.submit "Create" %> or <%= link_to 'Cancel', data_registers_path %>
+  </p>
+<% end %>
+
+

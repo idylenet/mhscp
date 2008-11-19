@@ -1,0 +1,20 @@
+<h2>Editing data_register_log</h2>
+
+<% form_for(@data_register_log) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :data_register %>
+    <%= f.text_field :data_register %>
+  </p>
+  <p>
+    <%= f.label :value %>
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @data_register_log %> |
+<%= link_to 'Back', data_register_logs_path %>

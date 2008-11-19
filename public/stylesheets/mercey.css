@@ -1,0 +1,157 @@
+html {
+	padding: 0em;
+	font-size: 1.1em;
+}
+
+body {
+
+	background: #178EEB; /*#dd3;*/
+	margin: 0em;
+	padding: 0em;
+}
+
+p {
+	padding: 0.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0.2em;
+	font-family: georgia, times;
+}
+
+h2 {
+	border-bottom: 0.2em solid #000;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+	border: 0.1em solid #ee3;
+}
+
+thead {
+	background: #ee3;
+}
+
+table td {
+	padding: 0.1em;
+	border-left: 0.1em solid #ee3;
+}
+
+label {
+	font-weight: bold;
+	margin: 0.2em;
+	float: left;
+	width: 8em;
+	border-bottom: 0.1em dashed #000;
+}
+
+input[type="submit"]{
+	font-size: 1em;
+	width: 8em;
+}
+
+#header {
+	margin: 0em;
+	padding: 0.4em;
+	padding-left: 0.3em;
+/*	background: #fe0;*/
+	color: #fff;
+	border-bottom: 0.2em solid #fff;
+}
+
+#header h1 {
+	padding: 0em;
+	margin: 0em;
+}
+
+#messages {
+	display: block;
+	clear: both;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.notice {
+	background: green;
+	color: white;
+}
+
+.error {
+	background: #eee;
+	color: red;
+}
+
+.close { 
+/*	float: right;*/
+}
+
+#content {
+	margin: 0em;
+	background: #fff;
+	clear: both;
+	padding: 0.7em;
+}
+
+#energy, #water {
+	border: 0.2em solid #000;
+	margin: 0.2em;
+}
+
+
+#energy {
+	
+}
+
+#water {
+
+}
+
+#control-panel {
+	color: #a62;
+}
+
+.category {
+	background: #fff;
+	float: left;
+	font-size: 1.1em;
+}
+
+.category h2 {
+	font-size: 1.8em;
+}
+
+/* system block styles */
+.system {
+	border: 0.15em solid #000;
+	background: #ffc;
+
+	width: 15em;
+	height: auto;
+	float: left;
+	margin: 0.5em;
+}
+
+.system h2 {
+	font-size: 1.5em;
+}
+
+.system td:first-child {
+	font-weight: bold;
+}
+
+.component {
+	margin: 0.2em;
+	border: 0.1em solid #000;
+}
+
+.menu li {
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	font-size: 1.4em;
+	list-style-type: none;
+}
+
+.menu li a {
+	display: block;
+}

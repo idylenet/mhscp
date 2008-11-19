@@ -1,0 +1,9 @@
+
+<tr class="data_register">
+	<td><%= f.text_field :name, :size => 25 %></td>
+	<td><%= f.text_field :register, :size => 10 %></td>
+	<td><%= f.lookup_for :unit_id %></td>
+	<td><%= f.check_box :writable %></td>
+	<td><%= f.text_area :desc, :rows => 2, :cols => 20 %></td>
+	<td><%= f.remove_link "Remove" %></td>
+</tr>

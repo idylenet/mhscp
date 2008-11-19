@@ -1,0 +1,24 @@
+<h1>Listing dashboard_devices</h1>
+
+<table>
+  <tr>
+    <th>Dashboard</th>
+    <th>Device</th>
+    <th>Order</th>
+  </tr>
+
+<% for dashboard_device in @dashboard_devices %>
+  <tr>
+    <td><%=h dashboard_device.dashboard %></td>
+    <td><%=h dashboard_device.device %></td>
+    <td><%=h dashboard_device.order %></td>
+    <td><%= link_to 'Show', dashboard_device %></td>
+    <td><%= link_to 'Edit', edit_dashboard_device_path(dashboard_device) %></td>
+    <td><%= link_to 'Destroy', dashboard_device, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dashboard_device', new_dashboard_device_path %>

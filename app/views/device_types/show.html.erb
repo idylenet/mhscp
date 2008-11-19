@@ -1,0 +1,39 @@
+<div id="device_type">
+<h3>Device Type</h3>
+<p>
+  <b>Name:</b>
+  <%=h @device_type.name %>
+</p>
+<p>
+  <b>Desc:</b>
+  <%=h @device_type.desc %>
+</p></div>
+<div id="data_registers">
+	<h3>Data Registers</h3>
+	
+	<table class="data">
+		<thead>
+			<tr>
+				<td>Name</td>
+				<td>Register</td>
+				<td>Unit</td>
+				<td>Writable</td>
+				<td>Description</td>
+			</tr>
+		</thead>
+		<tbody>
+			<% for reg in @device_type.data_registers %>
+			<tr>
+				<td><%= reg.name %></td>
+				<td><%= reg.register %></td>
+				<td><%= reg.unit_id %></td>
+				<td><%= reg.writable %></td>
+				<td><%= reg.desc %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+
+</div>
+<%= link_to 'Edit', edit_device_type_path(@device_type) %> |
+<%= link_to 'Back', device_types_path %>

@@ -1,0 +1,13 @@
+<h2>Editing device_type</h2>
+
+<% form_for(@device_type) do |f| %>
+
+<%= render :partial => 'fields', :locals => { :f => f } %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @device_type %> |
+<%= link_to 'Back', device_types_path %>

@@ -1,0 +1,28 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+temp:
+  name: Temperature
+  register: 10a
+  min_value: 0
+  max_value: 120
+  unit_id: 1
+  writable: false
+  desc: A temperature register
+
+psi:
+  name: Flow rate
+  register: 2B
+  min_value: 0
+  max_value: 120
+  unit_id: 1
+  writable: true
+  desc: A flow rate register
+  
+rpm:
+  name: Motor RPM
+  register: 3A
+  min_value: 0
+  max_value: 10000
+  unit_id: 1
+  writable: true
+  desc: A RPM register

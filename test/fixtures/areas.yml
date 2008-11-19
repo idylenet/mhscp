@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+room1:
+  name: Room 1
+  desc: A room with devices
+
+room2:
+  name: Room 2
+  desc: Another room with devices

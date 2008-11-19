@@ -1,0 +1,2 @@
+module DashboardDevicesHelper
+end

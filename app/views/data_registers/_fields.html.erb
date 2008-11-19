@@ -1,0 +1,22 @@
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :register %>
+    <%= f.text_field :register %>
+  </p>
+
+  <p>
+    <%= f.label :unit_id %>
+    <%= f.lookup_for :unit_id %>
+  </p>
+  <p>
+    <%= f.label :writable %>
+    <%= f.check_box :writable %>
+  </p>
+  <p>
+    <%= f.label :desc %>
+    <%= f.text_area :desc %>
+  </p>

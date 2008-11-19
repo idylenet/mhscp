@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @meter_type.name %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @meter_type.desc %>
+</p>
+
+<p>
+  <b>Class:</b>
+  <%=h @meter_type.class %>
+</p>
+
+
+<%= link_to 'Edit', edit_meter_type_path(@meter_type) %> |
+<%= link_to 'Back', meter_types_path %>

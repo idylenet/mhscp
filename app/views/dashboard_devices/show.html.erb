@@ -1,0 +1,18 @@
+<p>
+  <b>Dashboard:</b>
+  <%=h @dashboard_device.dashboard %>
+</p>
+
+<p>
+  <b>Device:</b>
+  <%=h @dashboard_device.device %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%=h @dashboard_device.order %>
+</p>
+
+
+<%= link_to 'Edit', edit_dashboard_device_path(@dashboard_device) %> |
+<%= link_to 'Back', dashboard_devices_path %>

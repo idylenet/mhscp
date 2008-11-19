@@ -1,0 +1,24 @@
+<h1>Editing meter_type</h1>
+
+<% form_for(@meter_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :desc %><br />
+    <%= f.text_area :desc %>
+  </p>
+  <p>
+    <%= f.label :class %><br />
+    <%= f.text_field :class %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @meter_type %> |
+<%= link_to 'Back', meter_types_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dashboard: 
+  device: 
+  order: 1
+
+two:
+  dashboard: 
+  device: 
+  order: 1

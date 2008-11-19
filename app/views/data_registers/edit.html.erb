@@ -1,0 +1,11 @@
+<h2>Editing data_register</h2>
+
+<% form_for(@data_register) do |f| %>
+<%= render :partial => 'fields', :locals => {:f => f} %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @data_register %> |
+<%= link_to 'Back', data_registers_path %>

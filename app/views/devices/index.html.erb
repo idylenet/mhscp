@@ -1,0 +1,32 @@
+<h2>Listing devices</h2>
+
+<table>
+	
+<thead>	
+  <tr>
+    <th>Name</th>
+	<th>Area</th>
+    <th>Ip address</th>
+	<th>Port</th>
+    <th>Device type</th>
+	<th colspan="3"></th>
+  </tr>
+</thead>
+<% for device in @devices %>
+  <tr>
+    <td><%=h device.name %></td>
+	<td><%=h device.area.name %></td>
+    <td><%=h device.ip_address %></td>
+	<td><%=h device.port %></td>
+    
+    <td><%=h device.device_type.name %></td>
+    <td><%= link_to 'Show', device %></td>
+    <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    <td><%= link_to 'Destroy', device, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New device', new_device_path %>

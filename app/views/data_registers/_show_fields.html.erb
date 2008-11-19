@@ -1,0 +1,21 @@
+<% data_register ||= @data_register %>
+
+<div class="data_register">
+	<h4>Data Register <%=h data_register.name %></h4>
+
+	<p>
+	  <b>Port:</b>
+	  <%=h data_register.port %>
+	</p>
+
+	<p>
+	  <b>Writable:</b>
+	  <%=h data_register.writable %>
+	</p>
+
+	<p>
+	  <b>Desc:</b>
+	  <%=h data_register.desc %>
+	</p>
+	
+</div>

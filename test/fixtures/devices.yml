@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+room1_vfd:
+  name: Pump #1 VFD
+  desc: Main pool pump VFD
+  ip_address: 192.168.2.51
+  port: 20
+  area: room1
+  device_type: vfd
+
+room2_adc:
+  name: ADC Board
+  desc: Sensor manifold
+  ip_address: 192.168.2.52
+  port: 4
+  area: room2
+  device_type: adc

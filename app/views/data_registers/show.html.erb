@@ -1,0 +1,26 @@
+<% data_register ||= @data_register %>
+
+<% title h(data_register.full_name) %>
+
+<div class="data_register">
+	<h2><%=h data_register.full_name %></h2>
+
+	<p>
+	  <b>Port:</b>
+	  <%=h data_register.port %>
+	</p>
+
+	<p>
+	  <b>Writable:</b>
+	  <%=h data_register.writable %>
+	</p>
+
+	<p>
+	  <b>Desc:</b>
+	  <%=h data_register.desc %>
+	</p>
+	
+</div>
+
+<%= link_to 'Edit', edit_data_register_path(@data_register) %> |
+<%= link_to 'Back', data_registers_path %>

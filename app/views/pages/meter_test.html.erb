@@ -1,0 +1,42 @@
+
+<script type="text/javascript">
+
+	// class: css-class, position: where in the stack this class goes, ratio: how many of this class relative to the others (total 1)
+	var meterTemplate = [{class: 'meter-red', ratio: 0.3},
+							{class: 'meter-orange', ratio: 0.3},
+							{class: 'meter-green', ratio: 0.4}]
+
+	var meterTemplate2 = [{class: 'meter-red', ratio: 0.2},
+							{class: 'meter-orange', ratio: 0.2},
+							{class: 'meter-green', ratio: 0.3},
+							{class: 'meter-orange', ratio: 0.2},
+							{class: 'meter-red', ratio: 0.1}]
+
+	var meter1 = new Meter("meter1", meterTemplate, 'VOLTS', 20, 0, 10, 5);
+	var meter2 = new Meter("meter2", meterTemplate2, 'AMPS', 50, -100, 100, -5);
+	var meter3 = new Meter("meter3", meterTemplate2, 'PSI', 100, -100, 100, -50);
+	var meter4 = new Meter("meter4", meterTemplate2, 'HERTZ', 200, -1000, 1000, 0);
+	
+	$(document).ready(function(){
+
+		set = [meter1, meter2, meter3, meter4]
+
+		for(var i = 0; i < set.length; i++)
+		{
+			
+			meter = set[i]
+			container = $('#' + meter.id + '_container')
+			container.css('float', 'left')
+			container.append(meter.toHtml())
+			// container.find('h3').append('blah')
+			
+			
+		}
+
+	})
+</script>
+
+<div id="meter1_container"><h3>Meter 1 </h3></div>
+<div id="meter2_container"><h3>Meter 2 </h3></div>
+<div id="meter3_container"><h3>Meter 3 </h3></div>
+<div id="meter4_container"><h3>Meter 4 </h3></div>

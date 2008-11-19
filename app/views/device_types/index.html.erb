@@ -1,0 +1,24 @@
+<h2>Listing device_types</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Desc</th>
+	<th colspan="3"></th>
+  </tr>
+</thead>
+<% for device_type in @device_types %>
+  <tr>
+    <td><%=h device_type.name %></td>
+    <td><%=h device_type.desc %></td>
+    <td><%= link_to 'Show', device_type %></td>
+    <td><%= link_to 'Edit', edit_device_type_path(device_type) %></td>
+    <td><%= link_to 'Destroy', device_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New device_type', new_device_type_path %>

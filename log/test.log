@@ -1,0 +1,147 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArea Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'mercey_test.areas' doesn't exist: SHOW FIELDS FROM `areas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArea Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'mercey_test.areas' doesn't exist: SHOW FIELDS FROM `areas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArea Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'mercey_test.areas' doesn't exist: SHOW FIELDS FROM `areas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArea Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'mercey_test.areas' doesn't exist: SHOW FIELDS FROM `areas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArea Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'mercey_test.areas' doesn't exist: SHOW FIELDS FROM `areas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArea Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'mercey_test.areas' doesn't exist: SHOW FIELDS FROM `areas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `mercey_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (59.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20081013033613)
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081013033613')[0m
+Migrating to CreateDataRegisters (20081101225009)
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE `data_registers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `min_value` decimal(10,2), `max_value` decimal(10,2), `unit_id` int(11) NOT NULL, `register` varchar(255) NOT NULL, `writable` tinyint(1) NOT NULL, `desc` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081101225009')[0m
+Migrating to CreateDeviceTypes (20081101225331)
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE `device_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` text, `error_data_register_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081101225331')[0m
+Migrating to CreateDataRegisterLogs (20081101225626)
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE `data_register_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `device_id` int(11) NOT NULL, `data_register_id` int(11) NOT NULL, `value` varchar(255) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081101225626')[0m
+Migrating to CreateAreas (20081101230348)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `areas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081101230348')[0m
+Migrating to CreateDevices (20081101230517)
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE `devices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `ip_address` varchar(255) NOT NULL, `port` varchar(255), `desc` text, `area_id` int(11) NOT NULL, `device_type_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081101230517')[0m
+Migrating to CreateDeviceTypeDataRegisters (20081102003157)
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE `device_type_data_registers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `device_type_id` int(11) NOT NULL, `data_register_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081102003157')[0m
+Migrating to CreateUnits (20081103050504)
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE `units` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `shorthand` varchar(255), `desc` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mUnit Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `units`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Numeric', '2008-11-16 17:21:41', NULL, NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.3ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Hexadecimal', '2008-11-16 17:21:41', 'h', NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Binary', '2008-11-16 17:21:41', 'b', NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.2ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('String', '2008-11-16 17:21:41', NULL, NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Percentage', '2008-11-16 17:21:41', '%', NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.1ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Amps', '2008-11-16 17:21:41', 'A', NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Volts', '2008-11-16 17:21:41', 'V', NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.3ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('PSI', '2008-11-16 17:21:41', NULL, NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('RPM', '2008-11-16 17:21:41', NULL, NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.2ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Hertz', '2008-11-16 17:21:41', 'Hz', NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Time', '2008-11-16 17:21:41', NULL, NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.2ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Hours', '2008-11-16 17:21:41', 'hrs', NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Minutes', '2008-11-16 17:21:41', 'mins', NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.2ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Seconds', '2008-11-16 17:21:41', 'secs', NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Date', '2008-11-16 17:21:41', NULL, NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUnit Create (0.2ms)[0m   [0mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Degrees(F)', '2008-11-16 17:21:41', 'F', NULL, '2008-11-16 17:21:41')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUnit Create (0.2ms)[0m   [0;1mINSERT INTO `units` (`name`, `updated_at`, `shorthand`, `desc`, `created_at`) VALUES('Degrees(C)', '2008-11-16 17:21:41', 'C', NULL, '2008-11-16 17:21:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081103050504')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `areas`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mdescribe `areas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `areas`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM `data_register_logs`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `data_register_logs`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `data_register_logs`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW FIELDS FROM `data_registers`[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mdescribe `data_registers`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `data_registers`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `device_type_data_registers`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `device_type_data_registers`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `device_type_data_registers`[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mSHOW FIELDS FROM `device_types`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mdescribe `device_types`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `device_types`[0m
+  [4;35;1mSQL (58.0ms)[0m   [0mSHOW FIELDS FROM `devices`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `devices`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `devices`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `units`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `units`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `units`[0m

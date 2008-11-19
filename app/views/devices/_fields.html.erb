@@ -1,0 +1,24 @@
+<p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :ip_address %>
+    <%= f.text_field :ip_address %>
+  </p>
+  <p>
+    <%= f.label :port %>
+    <%= f.text_field :port %>
+  </p>
+  <p>
+    <%= f.label :area_id %>
+    <%= f.lookup_for :area_id %>
+  </p>
+  <p>
+    <%= f.label :device_type_id %>
+    <%= f.lookup_for :device_type_id %>
+  </p>
+<p>
+    <%= f.label :desc %>
+    <%= f.text_area :desc %>
+  </p>

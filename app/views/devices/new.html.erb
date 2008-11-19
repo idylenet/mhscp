@@ -1,0 +1,12 @@
+<h2>New Device</h2>
+
+<% form_for(@device) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => 'fields', :locals => {:f => f} %>
+  <p>
+    <%= f.submit "Create" %> or <%= link_to 'Cancel', devices_path %>
+  </p>
+<% end %>
+
+

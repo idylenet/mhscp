@@ -1,0 +1,24 @@
+<h2>Listing data_register_logs</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Data register</th>
+    <th>Value</th>
+	<th colspan="3"></th>
+  </tr>
+</thead>
+<% for data_register_log in @data_register_logs %>
+  <tr>
+    <td><%=h data_register_log.data_register.name %></td>
+    <td><%=h data_register_log.value %></td>
+    <td><%= link_to 'Show', data_register_log %></td>
+    <td><%= link_to 'Edit', edit_data_register_log_path(data_register_log) %></td>
+    <td><%= link_to 'Destroy', data_register_log, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New data_register_log', new_data_register_log_path %>

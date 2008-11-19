@@ -1,0 +1,24 @@
+<h1>Editing dashboard_device</h1>
+
+<% form_for(@dashboard_device) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dashboard %><br />
+    <%= f.text_field :dashboard %>
+  </p>
+  <p>
+    <%= f.label :device %><br />
+    <%= f.text_field :device %>
+  </p>
+  <p>
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @dashboard_device %> |
+<%= link_to 'Back', dashboard_devices_path %>

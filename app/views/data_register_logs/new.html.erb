@@ -1,0 +1,23 @@
+<h2>New Data Register Log</h2>
+
+<% form_for(@data_register_log) do |f| %>
+  <%= f.error_messages %>
+
+<p>
+    <%= f.label :device_id %>
+    <%= f.lookup_for :device_id %>
+  </p>
+  <p>
+    <%= f.label :data_register_id %>
+    <%= f.lookup_for :data_register_id %>
+  </p>
+  <p>
+    <%= f.label :value %>
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit "Create" %> or <%= link_to 'Cancel', data_register_logs_path %>
+  </p>
+<% end %>
+
+

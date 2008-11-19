@@ -1,0 +1,22 @@
+
+FEATURE TODO
+
+* Meter animations (DONE)
+* Change color theme to include a cool color (DONE)
+* Acceptable data ranges for data_registers
+	- configurable error messages
+* Device type error condition automation across type
+* Ajax the meters
+* Sensor grid dashboard
+* Implement inline ajax forms
+* Pinging device prior to initialization
+* Startup network interrogation
+* Data export options
+* Graphs
+* Error messages to phone/text/etc realtime alerts
+* Refactor meters to use divs instead of tables
+
+QUESTIONS
+
+* Will setting the L200 VFDs to modbus communications mode disable the black box controller? -- NO
+

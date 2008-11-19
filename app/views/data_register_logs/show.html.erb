@@ -1,0 +1,18 @@
+<p>
+  <b>Device:</b>
+  <%=h @data_register_log.device.name %>
+</p>
+
+<p>
+  <b>Data register:</b>
+  <%=h @data_register_log.data_register.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @data_register_log.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_data_register_log_path(@data_register_log) %> |
+<%= link_to 'Back', data_register_logs_path %>

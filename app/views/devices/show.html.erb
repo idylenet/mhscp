@@ -1,0 +1,27 @@
+<h2><%=h @device.name %></h2>
+
+
+<p>
+  <b>Ip address:</b>
+  <%=h @device.ip_address %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%=h @device.area.name %>
+</p>
+
+<p>
+  <b>Device type:</b>
+  <%=h @device.device_type.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @device.desc %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>

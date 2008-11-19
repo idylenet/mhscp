@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+vfd_log1:
+  data_register: rpm
+  device: room1_vfd
+  value: 1000
+
+vfd_log2:
+  data_register: rpm
+  device: room1_vfd
+  value: 1100
+  
+vfd_log3:
+  data_register: rpm
+  device: room1_vfd
+  value: 2000
+
+vfd_log4:
+  data_register: psi
+  device: room1_vfd
+  value: 30

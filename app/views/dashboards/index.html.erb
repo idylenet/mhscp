@@ -1,0 +1,22 @@
+<h1>Listing dashboards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Desc</th>
+  </tr>
+
+<% for dashboard in @dashboards %>
+  <tr>
+    <td><%=h dashboard.name %></td>
+    <td><%=h dashboard.desc %></td>
+    <td><%= link_to 'Show', dashboard %></td>
+    <td><%= link_to 'Edit', edit_dashboard_path(dashboard) %></td>
+    <td><%= link_to 'Destroy', dashboard, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dashboard', new_dashboard_path %>

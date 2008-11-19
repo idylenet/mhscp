@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+vfd_reg1:
+  device_type: vfd
+  data_register: rpm
+  
+vfd_reg2:
+  device_type: vfd
+  data_register: psi
+
+adc_reg1:
+  device_type: adc
+  data_register: temp
