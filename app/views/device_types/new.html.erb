@@ -1,7 +1,20 @@
 <h2>New Device Type</h2>
 
 <% form_for(@device_type) do |f| %>
+
+<pre>
+<%= @device_type.data_registers.select(&:new_record?).length %>
+	
+<%= params.to_yaml %>
+
+<%= @device_type.to_yaml %>
+</pre>
 <%= render :partial => 'fields', :locals => { :f => f } %>
+
+<pre>
+	<%= @device_type.data_registers.to_yaml %>
+</pre>
+
   <p>
     <%= f.submit "Create" %> or <%= link_to 'Cancel', device_types_path %>
   </p>

@@ -2,7 +2,7 @@
 
 <%= render :partial => 'device_type_fields', :locals => {:f => f} %>
 
-<h3>Data Registers (<%= f.add_associated_link "Add New", @device_type.data_registers.build %>)</h3>
+<h3>Data Registers (<%= f.add_associated_link "Add New" , @device_type.data_registers.build %>)</h3>
 
 <table class="data">
 	<thead>
@@ -16,6 +16,6 @@
 		</tr>
 	</thead>
 	<tbody id="data_registers">
-		<%= f.render_associated_form(@device_type.data_registers) %>
+		<%= f.render_associated_form(@device_type.data_registers, :new => 1) %>
 	</tbody>
 </table>
